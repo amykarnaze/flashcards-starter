@@ -41,5 +41,13 @@ describe('Round', function() {
   it('should have property that stores incorrect guesses, that defaults to empty array', function() {
     expect(round.incorrectGuesses).to.deep.equal([]);
   });
-  
+
+  describe('takeTurn', function() {
+    it('should increment the turns property', function() {
+      round.takeTurn();
+      expect(round.turns).to.equal(1);
+      round.takeTurn();
+      expect(round.turns).to.equal(2);
+    });
+
   });
