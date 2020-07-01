@@ -44,4 +44,14 @@ describe('Turn', function() {
     });
   });
 
+  describe('evaluateGuess', function() {
+    it('should return true if the guess is correct', function() {
+      expect(happyTurn.evaluateGuess()).to.equal(true);
+    });
+
+    it('should return false if the guess is wrong', function() {
+      expect(sadTurn.evaluateGuess()).to.equal(false);
+    });
+  });
+
   });
