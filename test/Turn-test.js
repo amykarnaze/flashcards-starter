@@ -22,3 +22,12 @@ describe('Turn', function() {
   it('should be an instance of Turn', function() {
     expect(happyTurn).to.be.an.instanceof(Turn);
   });
+
+  it('should have a property of guess', function() {
+      expect(happyTurn.guess).to.equal('object');
+    });
+
+    it('should have a property of card that is an instance of card', function() {
+      expect(happyTurn.card).to.equal(card);
+      expect(card).to.be.an.instanceof(Card);
+    });
