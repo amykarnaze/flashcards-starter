@@ -33,4 +33,20 @@ describe('game', function() {
     expect(game.currentRound).to.deep.equal({});
   });
 
+  describe('start', function() {
+    it('should start a game', function() {
+      expect(game.start()).to.equal();
+    });
+    it('should create Cards', function() {
+      game.start();
+      expect(game.currentRound.deck.cards.length).to.equal(30);
+      expect(game.currentRound.deck.cards[0]).to.be.an.instanceof(Card);
+    });
+
+    it('should be an instance of Round', function() {
+      game.start();
+      expect(game.currentRound).to.be.an.instanceof(Round);
+    });
+    });
+
 });
