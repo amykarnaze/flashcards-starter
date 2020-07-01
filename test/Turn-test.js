@@ -14,3 +14,11 @@ describe('Turn', function() {
     happyTurn = new Turn('object', card);
     sadTurn = new Turn('sea otter', card);
   });
+
+  it('should be a function', function() {
+    expect(Turn).to.be.a('function');
+  });
+
+  it('should be an instance of Turn', function() {
+    expect(happyTurn).to.be.an.instanceof(Turn);
+  });
