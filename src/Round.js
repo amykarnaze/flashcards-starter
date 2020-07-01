@@ -24,6 +24,14 @@ class Round {
     let percentage = ((this.turns - this.incorrectGuesses.length) / this.turns) * 100;
     return this.correctPercentage = Math.round(percentage);
   }
+
+  endRound() {
+    if(this.deck.cards.length === 0) {
+      this.calculatePercentCorrect();
+      // console.log(`** Round over! ** You answered ${this.correctPercentage} of the questions correctly!`);
+      return `** Round over! ** You answered ${this.correctPercentage} of the questions correctly!`;
+    }
+  }
 }
 
 module.exports = Round;
