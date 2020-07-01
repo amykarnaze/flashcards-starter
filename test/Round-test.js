@@ -64,5 +64,12 @@ describe('Round', function() {
       expect(incorrectFeedback).to.equal('incorrect!');
     });
 
-  });
+    it('should store the id number of incorrect guesses', function() {
+      round.takeTurn('sea otter');
+      expect(round.incorrectGuesses).to.deep.equal([]);
+      round.takeTurn('spleen');
+      expect(round.incorrectGuesses).to.deep.equal([14]);
+    });
+    });
+  
   });
