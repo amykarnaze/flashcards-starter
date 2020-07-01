@@ -70,6 +70,16 @@ describe('Round', function() {
       round.takeTurn('spleen');
       expect(round.incorrectGuesses).to.deep.equal([14]);
     });
-    });
-  
   });
+
+  describe('calculatePercentCorrect', function() {
+    it('should calculate the correct percentage', function() {
+      round.takeTurn('sea otter');
+      expect(round.calculatePercentCorrect()).to.equal(100);
+      // round.calculatePercentCorrect();
+      round.takeTurn('spleen');
+      expect(round.calculatePercentCorrect()).to.equal(50);
+    });
+  });
+
+});
