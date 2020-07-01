@@ -33,5 +33,13 @@ describe('Round', function() {
       expect(round.returnCurrentCard()).to.equal(card1);
     });
   });
+
+  it('should have property of turns with default of 0', function() {
+    expect(round.turns).to.equal(0);
+  });
+
+  it('should have property that stores incorrect guesses, that defaults to empty array', function() {
+    expect(round.incorrectGuesses).to.deep.equal([]);
+  });
   
   });
