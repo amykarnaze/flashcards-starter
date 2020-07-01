@@ -38,4 +38,10 @@ describe('Turn', function() {
       });
     });
 
+    describe('returnCard', function() {
+    it('should return a card', function() {
+      expect(happyTurn.returnCard()).to.equal(card);
+    });
+  });
+
   });
