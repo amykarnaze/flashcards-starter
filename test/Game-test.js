@@ -28,4 +28,9 @@ describe('game', function() {
   it('should be an instance of Game', function() {
     expect(game).to.be.an.instanceof(Game);
   });
+
+  it('should have property of currentRound with default of {}', function() {
+    expect(game.currentRound).to.deep.equal({});
   });
+
+});
