@@ -30,4 +30,12 @@ describe('Deck', function() {
     expect(deck1.cards).to.deep.equal([card1, card2, card3]);
   });
 
+  describe('countCards', function() {
+    it('should return number of cards in the deck', function() {
+      expect(deck1.countCards()).to.equal(3);
+      expect(deck2.countCards()).to.equal(2);
+    });
+  });
+});
+
 });
