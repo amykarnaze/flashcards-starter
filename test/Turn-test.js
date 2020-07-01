@@ -54,4 +54,14 @@ describe('Turn', function() {
     });
   });
 
+  describe('giveFeedback', function() {
+    it('should return correct! if guess is correct', function() {
+      expect(happyTurn.giveFeedback()).to.equal('correct!');
+    });
+
+    it('should return incorrect! if guess is incorrect', function() {
+      expect(sadTurn.giveFeedback()).to.equal('incorrect!');
+    });
   });
+
+});
