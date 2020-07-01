@@ -26,4 +26,8 @@ describe('Deck', function() {
     expect(deck1).to.be.an.instanceof(Deck);
   });
 
+  it('should have a property of cards', function() {
+    expect(deck1.cards).to.deep.equal([card1, card2, card3]);
+  });
+
 });
