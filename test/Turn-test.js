@@ -31,3 +31,11 @@ describe('Turn', function() {
       expect(happyTurn.card).to.equal(card);
       expect(card).to.be.an.instanceof(Card);
     });
+
+    describe('returnGuess', function() {
+      it('should return a guess', function() {
+      expect(happyTurn.returnGuess()).to.equal('object');
+      });
+    });
+
+  });
