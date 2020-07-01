@@ -10,5 +10,9 @@ class Round {
     return this.deck.cards[0];
   }
 
+  takeTurn(guess) {
+    const turn = new Turn(guess, this.returnCurrentCard());
+    this.turns++;
+
 
 module.exports = Round;
