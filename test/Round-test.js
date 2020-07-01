@@ -82,4 +82,13 @@ describe('Round', function() {
     });
   });
 
+  describe('endRound', function() {
+    it('should print to the console', function() {
+      round.takeTurn('sea otter');
+      round.takeTurn('spleen');
+      round.takeTurn('pug');
+      round.endRound();
+      expect(round.endRound()).to.equal(`** Round over! ** You answered ${round.correctPercentage} of the questions correctly!`)
+    });
+  });
 });
