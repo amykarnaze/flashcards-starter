@@ -19,3 +19,14 @@ describe('Round', function() {
     round = new Round(deck);
     // deck2 = new Deck([card1, card2]);
   });
+
+  it('should be a function', function() {
+    expect(Round).to.be.a('function');
+  });
+
+  it('should be an instance of Round', function() {
+    expect(round).to.be.an.instanceof(Round);
+  });
+
+  
+  });
