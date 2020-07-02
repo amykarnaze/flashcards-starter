@@ -36,6 +36,5 @@ describe('Deck', function() {
       expect(deck2.countCards()).to.equal(2);
     });
   });
-});
 
 });
