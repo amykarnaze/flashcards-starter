@@ -1,6 +1,5 @@
 const chai = require('chai');
 const expect = chai.expect;
-
 const Turn = require('../src/Turn');
 const Card = require('../src/Card');
 const Deck = require('../src/Deck');
@@ -36,5 +35,4 @@ describe('Deck', function() {
       expect(deck2.countCards()).to.equal(2);
     });
   });
-
 });
