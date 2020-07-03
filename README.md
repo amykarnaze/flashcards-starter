@@ -4,21 +4,14 @@
 
 This was a solo project, provided in mod 2. The project was to take a partial OOP application and make it fully functional. We were tasked with building a program that simulates quizing a user through a set of flash cards. A user can see the questions, take their guess, receive immediate answer feedback, and lastly view their final score at the end of the round.
 
-## Learning Goals
-
-* Write clean, DRY JavaScript to store information in the data model and manipulate by adding functionality in the DOM. Key features: show, hide, add and remove elements from the DOM tree.
-* Use a provided class to create new object instances using the `new` keyword.
-* Understand event bubbling and use event delegation on dynamic elements.
-* Learn to read and understand the HTML and CSS provided by instructors. Begin to understand how to write effective, clean HTML & CSS
-
 ## Setup
 
-1. Project spec [this repository](https://frontend.turing.io/projects/flash-cards.html).
+1. Project spec from the Turning project page [this repository](https://frontend.turing.io/projects/flash-cards.html).
 2. Fork and clone down [this repository](https://github.com/turingschool-examples/flashcards-starter).
-3.`cd` into your local repository.
-4. Run npm install` to view page in the browser.
-5. Running node index.js from the root of your project should result in the following message being displayed in your terminal: Node server running on port 3000
-*Note that you will not need to you run your server until you are instantiating your `Game` class in Iteration 3. Prior to that, you should be using TDD to drive your code. You should check the functionality of your application by running your tests via `npm test`.*
+3. `cd` into your local repository.
+4. Run npm install` and node index.js from the root of your project should result in the following message being displayed in your terminal: Node server running on port 3000.
+
+*Note that you will not need to you run your server until you are instantiating your `Game` class in Iteration. Prior to that, you should be using TDD to drive your code. You should check the functionality of your application by running your tests via `npm test`.*
 
 ## Learning Goals
 
