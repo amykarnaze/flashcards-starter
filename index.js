@@ -1,3 +1,5 @@
+const Game = require('./src/Game');
+
 const http = require('http');
 let app = http.createServer();
 
